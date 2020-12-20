@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold" rel="stylesheet" type="text/css"/>
+    <style>
+        html{
+            font-family: 'Druk Wide',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .cont {
+            position: absolute;
+            background-color: #060507; 
+            height: 1522px;
+            width: 2030px;
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            z-index:-1;
+        }
+        .background {
+            height: 1124px;
+            width: 1742px;
+            margin-left: 144px;
+            margin-top: 71px;
+            margin-bottom: 199px;
+            border-style: solid;
+            border-color:white;
+            border-radius: 32px;
+            background-color: #060507; 
+            
+        }
+        .vector{
+            height: 58px;
+            width: 58px;
+            margin-left: 55px;
+            margin-top: 55px;
+            border-radius: 0px;
+
+        }
+        .slika{
+            height:850px;
+            width:1400px;
+            position:absolute;
+            z-index: -1;
+            background-image:url('assets/image/Gold.jpg');
+            background-image: transform rotate(-165deg);
+            top:672px;
+            left:-10px;
+        }
+        .montblanc{
+            
+            margin-left:64px;
+            height:35px;
+
+        }
+        ul {
+            list-style-type: none;
+            margin-top: 40px;
+            padding: 0;
+            height: 50;
+            width: 1127px;
+            float: left;
+        }
+        li{
+            float: left;
+        }   
+        li a{
+            margin-left:64px;
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          height: 15px;
+          
+        }
+        li a:hover {
+          background-color: #111;
+        }
+        .desni_gold{
+            width: 615px;
+            height: 347px;
+            left: 1451.61px;
+            top: -148.88px;
+            display: inline-block;
+            background-image:url('assets/image/Gold.jpg');
+            background-image: transform rotate(-165deg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            border-radius: 0px 31px 0px 0px;
+        }
+        nav{
+            display: inline;
+        }
+        .main_slika{
+            position: absolute;
+            width: 1301px;
+            height: 813px;
+            left: 147px;
+            top: 266px;
+        }
+        .logo{
+            position: absolute;
+            width: 183.28px;
+            height: 177.41px;
+            left: 974px;
+            top: 350px;
+        }
+        .img3{
+            position: absolute;
+            width: 316px;
+            height: 700px;
+            left: 1217px;
+            top: 363px;
+        }
+        .capture3{
+            position: absolute;
+            width: 353px;
+            height: 740px;
+            left: 1533px;
+            top: 574px;
+            background: linear-gradient(90deg, #060507 0%, #060507 100%);
+            border-radius: 0px 0px 31px 0px;
+            z-index: 1;
+        }
+        .img_capture3{
+            width: 353px;
+            height: 740px;
+            border-radius: 0px 0px 31px 0px;
+        }
+        .kinez{
+            position: absolute;
+            width: 822px;
+            height: 150px;
+            left: 150px;
+            top: 939px;
+        }
+        .kinez2{
+            position: absolute;
+            width: 822px;
+            height: 150px;
+            left: 1053px;
+            top: 939px;
+        }
+        .img5{
+            position: absolute;
+            width: 450px;
+            height: 40px;
+            left: 208px;
+            top: 1213px;
+            font-family: Druk Wide;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 183%;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+        .img5 img{
+            width: 450px;
+            height: 40px;
+        }
+        .capturetxt{
+            position: absolute;
+            width: 406px;
+            height: 92px;
+            left: 735px;
+            top: 1187px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 200%;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;            
+        }
+        .photo3{
+            position: absolute;
+            width: 316px;
+            height: 256px;
+            left: 1217px;
+            top: 1067px;
+            z-index: 0;
+        }
+        .photo3 img{
+            width: auto;
+            height: 249px;
+            
+        }
+        .p1{
+            width: 184px;
+            height: 12px;
+            position: absolute;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .p2{
+            position: absolute;
+            width: 257px;
+            height: 37px;
+
+            font-family: Druk Wide,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 42px;
+            display: flex;
+            align-items: center;
+
+            color: #FFFFFF;
+        }
+        .p3{
+            position: absolute;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 48px;
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            color: #3F3E44;
+            right: 77.49%;
+            left: 15.22%;
+            transform: rotate(-90deg);
+        }
+        .p1pos1{
+            left: 88px;
+            bottom: 670px;
+        }
+        .p1pos2{
+            left: 88px;
+            bottom: 581px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .p1pos3{
+            left: 88px;
+            bottom: 498px;
+        }
+        .p1pos4{
+            left: 88px;
+            bottom: 409px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .p1pos5{
+            left: 88px;
+            bottom: 326px;
+        }
+        .p1pos6{
+            left: 88px;
+            bottom: 237px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .p1pos7{
+            left: 88px;
+            bottom: 154px;
+        }
+        .p1pos8{
+            left: 88px;
+            bottom: 65px;
+            display: flex;
+            align-items: flex-end;          
+        }
+        .p2pos1{
+            left: 88px;
+            bottom: 593px;
+        }
+        .p2pos2{
+            left: 88px;
+            bottom: 421px;
+        }
+        .p2pos3{
+            left: 88px;
+            bottom: 249px;
+        }
+        .p2pos4{
+            left: 88px;
+            bottom: 77px;
+        }
+        .num{
+            position: absolute;
+            width: 72px;
+            height: 40px;
+            font-family: Druk Wide;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 183%;
+
+            display: flex;
+            align-items: center;
+        }
+        .num2{
+            position: absolute;
+            width: 72px;
+            height: 40px;
+            left:442px;
+            font-family: Druk Wide;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 183%;
+
+            display: flex;
+            align-items: center;
+            text-align: right;
+
+            color: #FFFFFF;
+        }
+        .line1{
+            position: absolute;
+            width: 140px;
+            height: 2px;
+            left:80px;
+            background: #A75B12;
+            border:none;
+        }
+        .line2{
+            position: absolute;
+            width: 183px;
+            height: 1px;
+            left: 220px;
+            background: #FFFFFF;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+            <img class="vector" src="assets/image/Vector.jpg">
+        <div class="slika">
+        </div>
+        <div class="background">
+            <nav>
+                <ul>
+                    <li> <img src="assets/image/montblanc.JPG" class="montblanc"/> </li>
+                    <li> <a>BIKES</a> </li>
+                    <li><a>ACCESSORIES</a></li>
+                    <li><a>NEW TECH</a></li>
+                    <li><a>EXPLORE</a></li>
+                </ul>
+            </nav>
+            <div class="desni_gold">
+                
+            </div>
+            <div class="main_slika">
+                <img src="assets/image/image 3.jpg" >
+            </div>
+            <div class="logo">
+                <img src="assets/image/MONTBLANC MOTORCYCLE.png"/>
+            </div>
+            <div class="img3">
+                <img src="assets/image/image 87.jpg">
+            </div>
+            <div class="capture3">
+                <p class="p1 p1pos1">6-SPEED CONSTANT-MESH</p>
+                <p class="p2 p2pos1">169 MPH</p>
+                <p class="p1 p1pos2">272 KM/H</p>
+                <!----------------------------------------------------->
+                <p class="p1 p1pos3">121 kW</p>
+                <p class="p2 p2pos2">162 HP</p>
+                <p class="p1 p1pos4">9.250 RPM</p>
+                <!----------------------------------------------------->
+                <p class="p1 p1pos5">8,800 RPM</p>
+                <p class="p2 p2pos3">130.5 N M</p>
+                <p class="p1 p1pos6">96.3 LBF⋅FT</p>
+                <!---------------------オートバイ-------------------------------->
+                <p class="p1 p1pos7">4.5 US GAL</p>
+                <p class="p2 p2pos4">17 L</p>
+                <p class="p1 p1pos8">3.7 IMP GAL</p>
+            </div>
+            <div class="kinez">
+                <img src="assets/image/kineski.jpg">
+            </div>
+            <div class="kinez2">
+                <img src="assets/image/kineski2.jpg">
+            </div>
+            <div class="img5">
+                <p class="num">< 2</p>
+                <hr class="line1"/><hr class="line2"/>
+                <p class="num2"> 10 ></p>
+            </div>
+            <div class="capturetxt">
+                <p>The bike comes in all black, with a relatively modern appeal. Chrome accents in just the right places make the bike stand out, while the black-on-black satin text on the bike’s fork-guards helps highlight the company’s branding without being too direct or obvious</p>
+            </div>
+            <div class="photo3">
+                <img src="assets/image/photo 3.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
